@@ -15,7 +15,7 @@ The website is hosted on [GitHub Pages] and is connected to a custom domain via 
 
 ## 📜 License
 
-This project is licensed under MIT License &copy; 2024 Snailairy.
+This project is licensed under MIT License. For more information visit <a link="https://www.tldrlegal.com/license/mit-license">MIT License (Expat)</a>
 
 ## 💬 Contact
 
@@ -24,4 +24,4 @@ For any inquiries, you can contact me at [contact@snailairy.com](mailto:contact@
 ---
 
 Thanks for visiting **Snailairy**! 🐌✨
-
+&copy; 2024 Snailairy
