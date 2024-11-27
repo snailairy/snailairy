@@ -6,17 +6,16 @@ The website is hosted on [GitHub Pages] and is connected to a custom domain via 
 
 ## 🌟 Features
 
-- 🔍 **Search**: Search for videos by title, dynamically fetched from a `content.json` file.
-- 🎥 **Featured Videos**: Displays a list of featured videos with clickable titles.
+- 🎥 **Videos**: Displays a list of featured videos with clickable titles.
 - 🛡️ **Privacy & FAQ**: A page with the privacy policy and answers to frequently asked questions.
 - ✉️ **Contact Us**: A contact form to send messages directly to `contact@snailairy.com`.
 
 ## 📂 Folder Structure
-
+- 🗂️ "videos/(video-title)/video.mov"
 
 ## 📜 License
 
-This project is licensed under (None his is close sourced).
+This project is Closed-Sourced.
 
 ## 💬 Contact
 
