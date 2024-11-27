@@ -1,0 +1,48 @@
+/* Global styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center the whole page's content */
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure header is above content */
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    padding-top: 80px; /* Offset for fixed header */
+    padding-bottom: 40px; /* Offset for fixed footer */
+    text-align: left; /* Align text to the left */
+    max-width: 800px; /* Optional: limit width for better readability */
+    margin: 0 auto; /* Center the main content */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000; /* Ensure footer is above content */
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}

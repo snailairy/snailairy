@@ -1,0 +1,46 @@
+/* Specific to video page */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding-top: 50px; /* Offset for fixed header */
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure header is above content */
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000; /* Ensure footer is above content */
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+video {
+    max-width: 100%;         /* Ensure the video is responsive */
+    height: auto;            /* Maintain aspect ratio */
+    display: block;          /* Centers the video */
+    margin: 20px auto;       /* Adds space above and below the video */
+    border: 10px solid red;  /* Adds a red 10px border around the video */
+}
