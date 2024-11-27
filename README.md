@@ -15,7 +15,7 @@ The website is hosted on [GitHub Pages] and is connected to a custom domain via 
 
 ## 📜 License
 
-This project is licensed under MIT License. For more information visit [MIT License (Expat | tl;dr Legal)](https://www.tldrlegal.com/license/mit-license)
+This project is licensed under MIT License. For more information visit [MIT License (Expat) | tl;dr Legal)](https://www.tldrlegal.com/license/mit-license)
 
 ## 💬 Contact
 
