@@ -1,54 +1,61 @@
-const videosJsonUrl = 'videos/content.json'; // Path to the JSON file containing video links
-
-// Fetch video data and update the page
-fetch(videosJsonUrl)
-    .then(response => response.json())
-    .then(data => {
-        // Render featured videos
-        const featuredVideosList = document.getElementById('featuredVideos');
-        data.forEach(videoPath => {
-            fetchVideoTitle(videoPath).then(title => {
-                const listItem = document.createElement('li');
-                const link = document.createElement('a');
-                link.href = videoPath;
-                link.textContent = title;
-                listItem.appendChild(link);
-                featuredVideosList.appendChild(listItem);
-            });
-        });
-    })
-    .catch(error => console.error('Error fetching video data:', error));
-
-// Fetch the title of the video page from the <title> tag
-async function fetchVideoTitle(videoPath) {
-    const response = await fetch(videoPath);
-    const text = await response.text();
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(text, 'text/html');
-    return doc.title; // Return the <title> tag text
+// Function to fetch video data from content.json
+async function fetchVideos() {
+  try {
+    const response = await fetch('/videos/content.json'); // Adjust path to JSON
+    const videos = await response.json();
+    displayFeaturedVideos(videos); // Display featured videos
+    setupSearch(videos); // Setup search functionality
+  } catch (error) {
+    console.error("Error fetching videos:", error);
+  }
 }
 
-// Search videos based on the title input
-function searchVideos() {
-    const searchInput = document.getElementById('searchInput').value.toLowerCase();
-    const searchResults = document.getElementById('searchResults');
+// Function to display featured videos
+function displayFeaturedVideos(videos) {
+  const featuredContainer = document.getElementById('featured-videos');
+  featuredContainer.innerHTML = ''; // Clear any existing content
+
+  // Loop through videos and fetch their titles
+  videos.forEach(videoPath => {
+    fetch(videoPath)
+      .then(response => response.text())
+      .then(pageContent => {
+        const title = pageContent.match(/<title>(.*?)<\/title>/)[1]; // Extract the title
+        const link = document.createElement('a');
+        link.href = videoPath;
+        link.textContent = title;
+        link.classList.add('video-link');
+        featuredContainer.appendChild(link);
+      });
+  });
+}
+
+// Function to handle search functionality
+function setupSearch(videos) {
+  const searchInput = document.getElementById('search-input');
+  const searchResults = document.getElementById('search-results');
+
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.toLowerCase();
     searchResults.innerHTML = ''; // Clear previous results
 
-    fetch(videosJsonUrl)
-        .then(response => response.json())
-        .then(data => {
-            data.forEach(videoPath => {
-                fetchVideoTitle(videoPath).then(title => {
-                    if (title.toLowerCase().includes(searchInput)) {
-                        const listItem = document.createElement('li');
-                        const link = document.createElement('a');
-                        link.href = videoPath;
-                        link.textContent = title;
-                        listItem.appendChild(link);
-                        searchResults.appendChild(listItem);
-                    }
-                });
-            });
-        })
-        .catch(error => console.error('Error searching videos:', error));
+    // Loop through videos and check if title matches search query
+    videos.forEach(videoPath => {
+      fetch(videoPath)
+        .then(response => response.text())
+        .then(pageContent => {
+          const title = pageContent.match(/<title>(.*?)<\/title>/)[1];
+          if (title.toLowerCase().includes(query)) {
+            const link = document.createElement('a');
+            link.href = videoPath;
+            link.textContent = title;
+            link.classList.add('video-link');
+            searchResults.appendChild(link);
+          }
+        });
+    });
+  });
 }
+
+// Initialize the video fetching when the page loads
+window.onload = fetchVideos;
