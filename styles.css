@@ -46,3 +46,11 @@ footer a {
     color: white;
     text-decoration: none;
 }
+
+video {
+    max-width: 100%;         /* Ensure the video is responsive */
+    height: auto;            /* Maintain aspect ratio */
+    display: block;          /* Centers the video */
+    margin: 20px auto;       /* Adds space above and below the video */
+    border: 10px solid red;  /* Adds a red 10px border around the video */
+}
