@@ -1,21 +1,14 @@
 # 🐌 Snailairy Website
 
-Welcome to **Snailairy**! This is a personal website where I share my video content, including featured videos, and provide a contact form for inquiries. 
+Welcome to **Snailairy**! This is a personal website where I host my photography services.
 
 The website is hosted on [GitHub Pages] and is connected to a custom domain via [Cloudflare](https://www.cloudflare.com/).
 
 ## 🌟 Features
 
-- 🎥 **Videos**: Displays a list of featured videos with clickable titles.
+- 📷 **Photography Services**: You can book my photo services.
 - 🛡️ **Privacy & FAQ**: A page with the privacy policy and answers to frequently asked questions.
 - ✉️ **Contact Us**: A contact form to send messages directly to `contact@snailairy.com`.
-
-## 📂 Folder Structure
-- 🗂️ "videos/(video-title)/video.mov"
-
-## 📜 License
-
-While my videos are Copywrited this repository is licensed under MIT License. For more information visit [MIT License (Expat) | tl;dr Legal](https://www.tldrlegal.com/license/mit-license)
 
 ## 💬 Contact
 
