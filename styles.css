@@ -65,6 +65,7 @@ footer a {
 #video-list a:hover,
 #video-list a:focus {
     color: white; /* Keep link color white on hover or focus */
+    text-decoration: underline; /* Add underline on hover */
 }
 
 #video-list a:active {
