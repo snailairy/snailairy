@@ -1,0 +1,63 @@
+/* Global styles */
+body {
+    font-family: 'Helvetica', sans-serif; /* Changed to Helvetica */
+    background-color: #282726; /* Set background color */
+    color: white; /* Default text color to white for better contrast */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center the whole page's content */
+}
+
+header {
+    background-color: #161615; /* Dark background for header */
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure header is above content */
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    padding-top: 80px; /* Offset for fixed header */
+    padding-bottom: 40px; /* Offset for fixed footer */
+    text-align: left; /* Align text to the left */
+    max-width: 800px; /* Optional: limit width for better readability */
+    margin: 0 auto; /* Center the main content */
+}
+
+footer {
+    background-color: #161615; /* Dark background for footer */
+    color: white;
+    padding: 0.5%;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000; /* Ensure footer is above content */
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+video {
+    max-width: 100%;         /* Ensure the video is responsive */
+    height: auto;            /* Maintain aspect ratio */
+    display: block;          /* Centers the video */
+    margin: 20px auto;       /* Adds space above and below the video */
+    border: 10px solid red;  /* Adds a red 10px border around the video */
+    border-radius: 15px;     /* Rounded corners for the video */
+}
+
+.top-text {
+    text-align: center;  /* Centers the text horizontally */
+    margin: 0;           /* Removes any default margin */
+    padding: 20px 0;     /* Adds vertical padding for spacing */
+}
