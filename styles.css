@@ -1,15 +1,15 @@
 /* Global styles */
 body {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: white;
-    color: black;
+    font-family: 'Helvetica', sans-serif; /* Changed to Helvetica */
+    background-color: #282726; /* Set background color */
+    color: white; /* Default text color to white for better contrast */
     margin: 0;
     padding: 0;
     text-align: center; /* Center the whole page's content */
 }
 
 header {
-    background-color: #333;
+    background-color: #161615; /* Dark background for header */
     padding: 10px;
     position: fixed;
     top: 0;
@@ -33,9 +33,9 @@ main {
 }
 
 footer {
-    background-color: #333;
+    background-color: #161615; /* Dark background for footer */
     color: white;
-    padding: 10px;
+    padding: 0.5%;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -47,10 +47,8 @@ footer a {
     text-decoration: none;
 }
 
-video {
-    max-width: 100%;         /* Ensure the video is responsive */
-    height: auto;            /* Maintain aspect ratio */
-    display: block;          /* Centers the video */
-    margin: 20px auto;       /* Adds space above and below the video */
-    border: 10px solid red;  /* Adds a red 10px border around the video */
+.top-text {
+    text-align: center;  /* Centers the text horizontally */
+    margin: 0;           /* Removes any default margin */
+    padding: 20px 0;     /* Adds vertical padding for spacing */
 }
