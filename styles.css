@@ -52,3 +52,21 @@ footer a {
     margin: 0;           /* Removes any default margin */
     padding: 20px 0;     /* Adds vertical padding for spacing */
 }
+
+#video-list a {
+    color: white; /* Set link color to white */
+    text-decoration: none; /* Remove underline */
+}
+
+#video-list a:visited {
+    color: white; /* Keep link color white even after being visited */
+}
+
+#video-list a:hover,
+#video-list a:focus {
+    color: white; /* Keep link color white on hover or focus */
+}
+
+#video-list a:active {
+    color: white; /* Keep link color white when clicked */
+}
