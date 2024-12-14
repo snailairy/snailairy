@@ -1,12 +1,12 @@
 # 🐌 Snailairy Website
 
-Welcome to **Snailairy**! This is a personal website where I host my photography services.
+Welcome to **Snailairy**! This is a personal website where I post my videos.
 
 The website is hosted on [GitHub Pages] and is connected to a custom domain via [Cloudflare](https://www.cloudflare.com/).
 
 ## 🌟 Features
 
-- 📷 **Photography Services**: You can book my photo services.
+- 🎥 **Videos**: I post videos here.
 - 🛡️ **Privacy & FAQ**: A page with the privacy policy and answers to frequently asked questions.
 - ✉️ **Contact Us**: A contact form to send messages directly to `contact@snailairy.com`.
 
