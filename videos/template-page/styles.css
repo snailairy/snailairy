@@ -70,9 +70,3 @@ video {
     border: 10px solid red;  /* Adds a red 10px border around the video */
     border-radius: 15px;     /* Rounded corners for the video */
 }
-
-.top-text {
-    text-align: center;  /* Centers the text horizontally */
-    margin: 0;           /* Removes any default margin */
-    padding: 20px 0;     /* Adds vertical padding for spacing */
-}
