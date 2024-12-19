@@ -15,6 +15,21 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000; /* Ensure header is above content */
+    display: flex; /* Apply flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+header nav {
+    display: flex;
+    justify-content: center; /* Center all items inside the nav */
+    width: 100%; /* Make sure nav takes full width */
+}
+
+header nav h3 {
+    position: absolute; /* Position h3 element independently */
+    left: 15px; /* Align it to the left side */
+    margin: 0; /* Remove default margin */
 }
 
 header nav a {
