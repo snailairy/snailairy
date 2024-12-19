@@ -62,12 +62,6 @@ footer a {
     text-decoration: none;
 }
 
-.top-text {
-    text-align: center;  /* Centers the text horizontally */
-    margin: 0;           /* Removes any default margin */
-    padding: 20px 0;     /* Adds vertical padding for spacing */
-}
-
 #video-list a {
     color: white; /* Set link color to white */
     text-decoration: none; /* Remove underline */
