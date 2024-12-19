@@ -9,6 +9,7 @@ The website is hosted on [GitHub Pages] and is connected to a custom domain via 
 - 🎥 **Videos**: I post videos here.
 - 🛡️ **Privacy & FAQ**: A page with the privacy policy and answers to frequently asked questions.
 - ✉️ **Contact Us**: A contact form to send messages directly to `contact@snailairy.com`.
+- 📸 **Photo Gallary (New)**: A way to see my photos! I also have a patreon which can be found in the Gallary page!
 
 ## 💬 Contact
 
