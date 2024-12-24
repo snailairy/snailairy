@@ -13,7 +13,7 @@ The website is hosted on [GitHub Pages] and is connected to a custom domain via 
 
 ## 💬 Contact
 
-For any inquiries, you can contact me at [contact@snailairy.com](mailto:contact@snailairy.com).
+For any inquiries, you can contact me [here](mailto:calenbuck@proton.me).
 
 ---
 
