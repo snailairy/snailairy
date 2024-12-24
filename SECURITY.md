@@ -10,4 +10,4 @@ This is my version history
 
 ## Reporting a Vulnerability
 
-Please report any vulnerabilities to [contact@snailairy.com](mailto:contact@snailairy.com).
+Please report any vulnerabilities to [me](mailto:calenbuck@proton.me).
