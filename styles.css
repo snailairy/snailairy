@@ -71,7 +71,7 @@ footer a {
     display: grid; /* Use CSS Grid to create a flexible, responsive layout */
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Automatically adjust column count based on screen size */
     gap: 16px; /* Space between the images */
-    padding: 20px; /* Add padding around the gallery */
+    padding: 10px; /* Add padding around the gallery */
 }
 
 #gallary img {
