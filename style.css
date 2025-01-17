@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica', sans-serif; /* Changed to Helvetica */
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #7E8FFF;
+    color: white; /* Set text color to white */
+    padding: 20px 0; /* Increase vertical padding for a taller header */
+}
+
+.header-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: right; /* Center items vertically */
+    padding: 0 20px; /* Horizontal padding for header content */
+}
+
+.logo-text {
+    font-size: 28px; /* Increase font size for logo text */
+    color: white; /* Ensure logo text is white */
+    margin-right: auto; /* Push the logo to the left */
+}
+
+
+nav {
+    flex-grow: 1; /* Allow nav to take up space */
+    display: flex; /* Use flexbox for nav items */
+    justify-content: right; /* Center the nav items */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Horizontal layout */
+}
+
+nav li {
+    margin: 0 20px; /* Increase space between buttons */
+}
+
+nav a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Increase font size for links */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+footer {
+    background-color: #7E8FFF;
+    color: white; /* Footer text color */
+    text-align: center; /* Centered text */
+    padding: 0.5%;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000; /* Ensure footer is above content */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.top-text {
+    display: grid;
+    place-items: center;    /* Center both horizontally and vertically*/
+}
+
+.article-image {
+    border: 10px solid black;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.sitelogo {
+    width: 10%;
+    max-width: 10%;
+    height: auto;
+}
+
+button, input[type="submit"] {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 5px;
+    }
+
+    header, footer {
+        font-size: 12px;
+    }
+}
+
+/* Info Text */
+.info-text {
+    font-style: italic; /* Make the text italic */
+    color: grey; /* Set the text color to grey */
+}
+
+/* Warning Text */
+.warning-text {
+    font-style: italic; /* Make the text italic */
+    color: red; /* Set the text color to red */
+}
