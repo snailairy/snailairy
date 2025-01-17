@@ -6,7 +6,7 @@ The website is hosted on [GitHub Pages] and is connected to a custom domain via 
 
 ## 🌟 Features
 
-- 📃 **Articles**: I post videos here.
+- 📃 **Articles**: I post new on video games & technology here.
 - 🛡️ **Privacy**: This site uses no data tracking or advertisements. It's completely free (subject to change)
 
 ## 💬 Contact
